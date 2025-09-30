@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<locale.h>
+int main()
+{
+	setlocale(LC_CTYPE, "RUS");
+	int a;
+	int b;
+	int result_int;
+	int result_float;
+	puts("Введите a");
+	scanf("%d", &a);
+	puts("Введите b");
+	scanf("%d", &b);
+	printf("%d,%f\n", (int)a/b, (float)a/b);
+	printf("Целая часть равна:%d\n,дробная часть равна:%lf", (int)a / b, ((long float)a / b) - ((int)a / b));
+
+}
