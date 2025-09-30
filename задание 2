@@ -1,0 +1,14 @@
+#include<locale.h>
+#include<stdio.h>
+int main()
+{
+	setlocale(LC_CTYPE, "RUS");
+	int a = 11;
+	int b = 3;
+	float(type);
+	
+
+	printf("Значение переменной x: %d\n", (int)a/b);
+	printf("Значение переменной y: %f\n",(float)a/b);
+	printf("Значение переменной z: %f\n",(long double)a/b);
+}
